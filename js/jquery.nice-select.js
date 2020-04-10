@@ -78,7 +78,8 @@
           .attr('data-display', (display || null))
           .addClass('option' +
             ($option.is(':selected') ? ' selected' : '') +
-            ($option.is(':disabled') ? ' disabled' : ''))
+            ($option.is(':disabled') ? ' disabled' : '')) + ' ' +
+            $option.attr('class')    
           .html($option.text())
         );
       });
